@@ -1,0 +1,108 @@
+.history-page { padding: 48px 40px; max-width: 800px; }
+
+.history-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 32px;
+  color: var(--gray-900);
+}
+
+.history-header h1 { font-size: 1.8rem; font-weight: 800; letter-spacing: -0.5px; }
+.history-header svg { color: var(--blue-500); }
+
+.history-count {
+  background: var(--blue-50);
+  color: var(--blue-600);
+  border: 1px solid var(--blue-100);
+  padding: 3px 10px;
+  border-radius: 99px;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.history-loading, .history-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 80px 0;
+  color: var(--gray-400);
+  font-size: 0.95rem;
+}
+
+.history-list { display: flex; flex-direction: column; gap: 14px; }
+
+.history-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s;
+}
+
+.history-card:hover { box-shadow: var(--shadow-md); }
+
+.history-card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.history-id {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--blue-600);
+  background: var(--blue-50);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.history-time {
+  font-size: 0.78rem;
+  color: var(--gray-400);
+  margin-left: auto;
+}
+
+.delete-btn {
+  background: none;
+  border: 1px solid var(--gray-200);
+  color: var(--gray-400);
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.delete-btn:hover { background: #fef2f2; border-color: #fecaca; color: #dc2626; }
+
+.history-rec {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+  line-height: 1.65;
+  margin-bottom: 12px;
+}
+
+.history-yt-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  color: var(--blue-600);
+  text-decoration: none;
+  font-weight: 500;
+  border: 1px solid var(--blue-100);
+  background: var(--blue-50);
+  padding: 4px 12px;
+  border-radius: 99px;
+  transition: all 0.15s;
+}
+
+.history-yt-link:hover { background: var(--blue-100); }
+
+.spin { animation: spin 1s linear infinite; }
+.blue { color: var(--blue-500); }
+@keyframes spin { to { transform: rotate(360deg); } }

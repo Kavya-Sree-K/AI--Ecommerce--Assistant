@@ -1,0 +1,13 @@
+flask
+flask-cors
+streamlit
+crewai
+crewai-tools
+sqlalchemy
+pymysql
+python-dotenv
+google-search-results
+pandas
+requests
+openai
+litellm
